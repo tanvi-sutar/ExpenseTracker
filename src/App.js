@@ -11,10 +11,15 @@ function App() {
     {"date": new Date(2022, 2, 8), "title" : "Car Insurance", "amount" : 233.3},
   ]
 
+  const onAddExpenseHandler = (newExpense) => {
+    expenses.concat(newExpense)
+    console.log("In app.js\n"+newExpense);
+  }
+
   return (
     <div>
       <h2>Let's get started!</h2>
-      <NewExpense />
+      <NewExpense onAddExpense={onAddExpenseHandler}/>
       <Expenses expenses={expenses}/>
     </div>
   );
