@@ -7,7 +7,11 @@ const ExpensesList = (props) => {
         return <div className="expenses-list__fallback">No expenses found</div>
     }
     return <ul className="expenses-list">
-        { props.filteredExpenses.map(filteredExpense => <ExpenseItem expense={filteredExpense}/>) }
+        { props.filteredExpenses.map(filteredExpense => <ExpenseItem 
+                                                            key={filteredExpense.date}
+                                                            expense={filteredExpense}
+                                                        />)
+        }
     </ul>
 }
 

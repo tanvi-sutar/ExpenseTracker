@@ -1,0 +1,6 @@
+fileignoreconfig:
+- filename: src/components/Expenses/ExpensesList.js
+  checksum: 3c8b37acf99cb4c03353837b8b3d6732768c63a99e5fbe1fc8dd8a9c7d0a6f3c
+- filename: src/components/Chart/Chart.js
+  checksum: 99c31acddde58b2ef54de635fe2c1539010fda2545feb7fdc4b8e7260c033038
+version: ""
